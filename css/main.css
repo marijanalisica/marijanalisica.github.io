@@ -15,6 +15,14 @@ body {
     margin: 0;
 }
 
+a {
+    color:var(--darkBlue);
+}
+
+p {
+    margin: 0;
+}
+
 .main-wrapper {
     overflow: hidden;
     position: relative;
@@ -105,7 +113,7 @@ body {
     justify-content: space-between;
 }
 
-button {
+.primaryButton {
     height: 56px;
     line-height: 36px;
     border: 1px solid #012140 ;
@@ -125,11 +133,10 @@ button {
     cursor: pointer;
    
 }
-button:hover{ 
+.primaryButton:hover{ 
         background-position: left bottom;
         color: white;
 }
-
 
 .developer {
     color:var(--darkBlue);
@@ -268,7 +275,9 @@ button:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
+    margin-bottom: 32px;
 }
+
 
 @media only screen and (max-width:450px) {
 
@@ -276,15 +285,20 @@ button:hover{
         padding-left: 16px;
         padding-right: 16px;
     }
+    .header-content{
+        margin-top: 32px;
+    }
     button{
         padding: 0 24px;
         font-size: 20px;
     }
     .developer{
         font-size: 50px;
+        line-height: 40px;
     }
     .web{
         font-size: 50px;
+        margin-top: 256px;
     }
     .projects_text{
         font-size: 50px;
@@ -338,6 +352,9 @@ button:hover{
     }
     .marginTop96{
         margin-top: 20px;
+    }
+    .circle1{
+        top: 162px;
     }
       
 }
